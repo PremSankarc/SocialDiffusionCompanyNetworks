@@ -2,12 +2,12 @@ library(igraph)
 
 node_number=902
 g=read.graph("Companies.net", format = c("pajek"))
-#https://gist.github.com/chengjun/1b5836a6b617efe98004 
+# Reference https://gist.github.com/chengjun/1b5836a6b617efe98004 
 
 
 # # generate a social graph
 # node_number = 100
- g = barabasi.game(node_number) ; plot(g)
+# g = barabasi.game(node_number) ; plot(g)
 
 seeds_num = 1
 set.seed(2014); diffusers = sample(V(g),seeds_num) ; diffusers
